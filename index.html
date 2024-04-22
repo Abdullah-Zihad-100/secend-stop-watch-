@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Secend Stop Watch</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl font-extrabold text-blue-500 text-center pt-36">Secend Stop Watch
+        </h1>
+    </header>
+    <div class="flex flex-col justify-center items-center mt-[15vh]">
+     <div class="flex flex-row items-center justify-center ms-14 mb-10">
+        <span id="number" class="text-8xl me-2 text-blue-500 font-extrabold">0</span>
+        <span id="number" class="text-4xl text-blue-500 font-bold">sec</span>
+     </div>
+        <div>
+            <button onclick="startCount()" id="start" class="py-3 hover:bg-blue-300 px-8 text-xl text-white font-bold m-2 bg-blue-500 ">Start</button>
+            <button onclick="stopCount()" id="stop" class="py-3 hover:bg-blue-300 px-8 text-xl text-white font-bold m-2 bg-blue-500">Stop</button>
+            <button onclick="resetCount()" id="reset" class="py-3 hover:bg-blue-300 px-8 text-xl text-white font-bold m-2 bg-blue-500">Reset</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
